@@ -1,0 +1,90 @@
+/*  start global */
+:root{
+ --color-white: #fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+
+}
+body{
+   margin: 0; 
+}
+a, span{
+    display: inline-block;
+}
+
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+}
+/*  end global */
+
+/* start header */
+#addButton{
+width: 30%;
+}
+
+.loader {
+    border: 2px solid #FFF;
+    width: 48px;
+    height: 48px;
+    background: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 24px solid;
+    border-color: transparent #FFF;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+
+
+  .loaderBTN {
+    width: 20px;
+    height: 20px;
+    border: 5px dotted #3dcb09;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+   
+/* end header */
